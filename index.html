@@ -3,12 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kylde l Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="header finisher-header w-full min-h-screen overflow-hidden"> 
-    
+<body class="header finisher-header w-full min-h-screen "> 
 
+    <!-- Header section -->
+    <header class="absolute z-50 top-0 left-1/2 -translate-x-1/2 flex items-center justify-center text-white mt-6 overflow-hidden">
+        <nav class="bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[50px] py-4 px-6 body-shadow-lg border border-[rgba(255,255,255,0.1)]">
+            <ul class="flex flex-row gap-4 font-semibold sm:text-lg text-[13px]">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+        <section class="relative flex flex-col p-6 justify-center items-center text-white min-h-screen gap-4  text-center overflow-hidden ">
+                <h4 class="text:xl lg:text-2xl font-semibold">CREATIVE WEB & GRAPHIC DESIGN</h4>
+                <h1 class="text-6xl font-extrabold text-white">Turning Ideas into <span class="text-amber-500">Pixel-Perfect Designs</span></h1>
+                <p class="text-[14px] lg:text-xl">Hi, I'm Kylde — a passionate Web Developer & Graphics Designer based in the Philippines.</p>
+
+                <div class=" flex flex-row gap-4 mt-6">
+                    <a href="" class="bg-sky-600 px-8 py-3 rounded-[7px]">View my Work</a>
+                    <a href="" class="border rounded-[7px] px-8 py-3">Download CV</a>
+                </div>
+                
+            <div class="absolute bottom-[2em] flex flex-col items-center justify-center gap-4 mt-6 animate-bounce duration-300">
+                <a href="#about" class="flex flex-col items-center justify-center text-white gap-2">     
+                    <p>Learn more.</p>
+                    <img class="w-[40px]" src="arrow (2).png" alt="">
+                </a>
+            </div>
+    </section>
+
+    <!-- About Section -->
+ <section data-aos="fade-up" id="about" class="flex flex-col p-6 justify-center items-center text-white gap-6 text-center overflow-hidden scroll-mt-24  ">
+
+        <h5 class="text-xl">Introduction</h5>
+        <h2 class="text-4xl font-bold">About Me</h2>
+
+        <div  class="flex justify-center items-center md:flex-row flex-col-reverse gap-6 max-w-4xl m-6 ">
+                <div data-aos="fade-right" class="w-1/2 flex flex-col items-center justify-center md:text-center">
+                    <p class="text-justify w-[300px] lg:w-full">I am Kylde a passionate and motivated Frontend Developer with a strong foundation in web development and a keen eye for design. As a recent graduate, I am eager to apply my knowledge and creativity to real-world projects. I have a growing interest in crafting clean, user-friendly websites and visuals, and I am excited to continue learning and contributing to meaningful digital experiences.</p>
+
+                    <div class="flex flex-col md:flex-row items-center justify-center md:flex-row gap-4">
+                        <button class="py-2.5 px-5 rounded-[5px] bg-transparent cursor-pointer text-white border mt-6 w-max">View my project</button>
+                        <button class="py-2.5 px-5 rounded-[5px] bg-white cursor-pointer text-black border mt-6 w-max">Download CV</button>
+                    </div>
+
+                </div>
+                
+                <div data-aos="fade-left" class="1/2">
+
+                    <img src="https://avatars.githubusercontent.com/u/102626688?v=4" alt="Kylde's Avatar" class="rounded-full w-48 h-48 mx-auto shadow-lg">
+                    <p class="mt-4">Kylde</p>
+                    <p class="text-gray-400">Web Developer & Graphics Designer</p>
+
+                </div>
+        </div>
 
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
     <script type="text/javascript">
