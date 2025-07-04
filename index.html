@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Kylde l Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="header finisher-header w-full min-h-screen "> 
+<body class="bg-[#201e30] w-full min-h-screen"> 
 
     <!-- Header section -->
     <header class="absolute z-50 top-0 left-1/2 -translate-x-1/2 flex items-center justify-center text-white mt-6 overflow-hidden">
-        <nav class="bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[50px] py-4 px-6 body-shadow-lg border border-[rgba(255,255,255,0.1)]">
+        <nav class="bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[50px] py-4 px-6 body-shadow-lg border border-[rgba(255,255,255,0.1)] text-center">
             <ul class="flex flex-row gap-4 font-semibold sm:text-lg text-[13px]">
                 <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#project">Project</a></li>
+
             </ul>
         </nav>
     </header>
@@ -28,8 +29,8 @@
                 <p class="text-[14px] lg:text-xl">Hi, I'm Kylde — a passionate Web Developer & Graphics Designer based in the Philippines.</p>
 
                 <div class=" flex flex-row gap-4 mt-6">
-                    <a href="" class="bg-sky-600 px-8 py-3 rounded-[7px]">View my Work</a>
-                    <a href="" class="border rounded-[7px] px-8 py-3">Download CV</a>
+                    <a href="und-con.html" class="bg-sky-600 px-8 py-3 rounded-[7px]">View my Work</a>
+                    <a href="und-con.html" class="border rounded-[7px] px-8 py-3">Download CV</a>
                 </div>
                 
             <div class="absolute bottom-[2em] flex flex-col items-center justify-center gap-4 mt-6 animate-bounce duration-300">
@@ -40,6 +41,12 @@
             </div>
     </section>
 
+    <!-- Get in Touch Fix btn -->
+
+    <button class="fixed bottom-12 right-12 bg-sky-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-sky-700 transition duration-300 z-50 cursor-pointer" onclick="window.location.href='und-con.html'">
+        Get in Touch
+    </button>
+
     <!-- About Section -->
  <section data-aos="fade-up" id="about" class="flex flex-col p-6 justify-center items-center text-white gap-6 text-center overflow-hidden scroll-mt-24  ">
 
@@ -48,11 +55,11 @@
 
         <div  class="flex justify-center items-center flex-row gap-6 max-w-4xl m-6 ">
                 <div data-aos="fade-right" class="w-1/2 flex flex-col items-center justify-center md:text-center">
-                    <p class="text-justify w-[300px] lg:w-full">I am Kylde a passionate and motivated Frontend Developer with a strong foundation in web development and a keen eye for design. As a recent graduate, I am eager to apply my knowledge and creativity to real-world projects. I have a growing interest in crafting clean, user-friendly websites and visuals, and I am excited to continue learning and contributing to meaningful digital experiences.</p>
+                    <p class=" text-justify w-[300px] lg:w-full">I am Kylde a passionate and motivated Frontend Developer with a strong foundation in web development and a keen eye for design. As a recent graduate, I am eager to apply my knowledge and creativity to real-world projects. I have a growing interest in crafting clean, user-friendly websites and visuals, and I am excited to continue learning and contributing to meaningful digital experiences.</p>
 
                     <div class="flex flex-row items-center justify-center md:flex-row gap-4">
-                        <button class="py-2.5 px-5 rounded-[5px] bg-transparent cursor-pointer text-white border mt-6 w-max">View my project</button>
-                        <button class="py-2.5 px-5 rounded-[5px] bg-white cursor-pointer text-black border mt-6 w-max">Download CV</button>
+                        <a href="und-con.html" class="py-3 px-8 rounded-[5px] bg-transparent cursor-pointer text-white border mt-6 w-max">View my project</a>
+                        <a href="und-con.html" class="py-3 px-8 rounded-[5px] bg-white cursor-pointer text-black border mt-6 w-max">Download CV</a>
                     </div>
 
                 </div>
@@ -67,68 +74,81 @@
         </div>
     </section>
 
-    <!-- Project Section -->
+    <!-- Testimonials Section -->
 
-    <section class="flex flex-col justify-center items-center text-white">
-
-        <h2 class="text-4xl font-bold">My Work</h2>
-        <div class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[10px] body-shadow-lg border border-[rgba(255,255,255,0.1)] max-w-4xl mt-4 p-6">
-
-            <!-- Cards -->
-            <div class="flex flex-row bg-transparent gap-4">
-                <!-- Image -->
-                <div class="w-[40%] border border-[rgba(255,255,255,0.1)] rounded-[10px] flex items-center justify-center">
-                    <img src="my-work-assest/7e940a87-26aa-4300-a9d4-b985db1ea4d6.jpg" alt="" class="rounded-[10px] w-full h-full object-cover">
-                </div>
-
-                <!-- Description -->
-                <div class="w-[60%] bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[10px] body-shadow-lg border border-[rgba(255,255,255,0.1)] p-3">
-                    <h3 class="text-2xl font-semibold mt-4 h-[30%] ">CRT STUDENT MANAGEMENT</h3>
-                    <p class="text-gray-400 h-[70%] text-justify">is a basic student record system built for managing academic data in a clean and organized layout. It includes a dashboard for adding, viewing, updating, and deleting student information, along with grade tracking and search functionality.</p> 
-                </div>
-            </div>
-        </div>
+    <section id="testimonials" class="text-center text-white mt-24 ">
+        <h1 class="text-4xl font-bold">Testimonals</h1>
+        <p class="text-lg text-gray-600">This section is currently under construction. Please check back soon!</p>
+        </div>  
     </section>
 
-    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-new FinisherHeader({
-  "count": 30,
-  "size": {
-    "min": 2,
-    "max": 8,
-    "pulse": 0.3
-  },
-  "speed": {
-    "x": {
-      "min": 0,
-      "max": 0.8
-    },
-    "y": {
-      "min": 0,
-      "max": 0.8
-    }
-  },
-  "colors": {
-    "background": "#201e30",
-    "particles": [
-      "#fbfcca",
-      "#d7f3fe",
-      "#ffd0a7"
-    ]
-  },
-  "blending": "overlay",
-  "opacity": {
-    "center": 1,
-    "edge": 0.25
-  },
-  "skew": 0,
-  "shapes": [
-    "c",
-    "s",
-    "t"
-  ]
-});
-    </script>
+
+
+    <!-- project -->
+    <section id="project" class="grid grid-rows-1 grid-cols-1 place-items-center text-white mt-24">
+            <h2 class="text-4xl font-bold">Featured <span>Projects</span></h2>
+        <a href="und-con.html" class="py-3 px-8 rounded-[5px] bg-transparent cursor-pointer text-white border mt-6">View More</a>
+
+        <div class="grid grid-cols-2 max-w-6xl mt-4 p-6 gap-4">
+
+            <!-- cards 1 -->
+            <div  class="flex flex-col  justify-between bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[10px] body-shadow-lg border border-[rgba(255,255,255,0.1)] p-8 space-y-4">
+
+                <!-- cards img -->
+                <div class="space-y-4">
+                    <img src="my-work-assest/7e940a87-26aa-4300-a9d4-b985db1ea4d6.jpg" alt="" class="max-w-[100%] h-auto rounded-[10px]">
+                    <h3 class="text-2xl font-semibold">CRT STUDENT MANAGEMENT</h3>
+                </div>
+                <!-- cards Title description -->
+                    <h4 class="text-justify">- is a basic student record system built for managing academic data in a clean and organized layout. It includes a dashboard for adding, viewing, updating, and deleting student information, along with grade tracking and search functionality.</h2>
+                    <div class="flex flex-row items-center justify-start gap-2 text-gray-400 text-[13px]">
+                        <p>● HTML</p>
+                        <P>● CSS</P>
+                        <p>● JavaScript</p>
+                        <p>● PHP</p>
+                    </div>
+
+
+                <div class="border-t-2 border-gray-400 pt-4 flex items-center justify-between">
+                    <a href="" class="text-sky-400">View More ></a>
+                </div>
+
+            </div>
+
+            <!-- cards 2 -->
+
+            <div  class="flex flex-col  justify-between bg-[rgba(255,255,255,0.1)] backdrop-blur-md rounded-[10px] body-shadow-lg border border-[rgba(255,255,255,0.1)] p-8 space-y-4">
+
+                <!-- cards img -->
+                <div class="space-y-4">
+                    <img src="my-work-assest/7e940a87-26aa-4300-a9d4-b985db1ea4d6.jpg" alt="" class="max-w-[100%] h-auto rounded-[10px]">
+                    <h3 class="text-2xl font-semibold">CRT STUDENT MANAGEMENT</h3>
+                </div>
+                <!-- cards Title description -->
+                    <h4 class="text-justify">- is a basic student record system built for managing academic data in a clean and organized layout. It includes a dashboard for adding, viewing, updating, and deleting student information, along with grade tracking and search functionality.</h2>
+                    <div class="flex flex-row items-center justify-start gap-2 text-gray-400 text-[13px]">
+                        <p>● HTML</p>
+                        <P>● CSS</P>
+                        <p>● JavaScript</p>
+                        <p>● PHP</p>
+                    </div>
+
+
+                <div class="border-t-2 border-gray-400 pt-4 flex items-center justify-between">
+                    <a href="" class="text-sky-400">View More ></a>
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#08100c] mt-20">
+        <div class="text-center text-white p-6 text-[13px] sm:text-[16px]">
+            <p>&copy; 2025 Kylde. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
